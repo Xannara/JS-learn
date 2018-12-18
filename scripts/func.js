@@ -13,7 +13,7 @@
     return (a + b);
 } */
 
-let calc = (a,b) => a+b;
+/* let calc = (a,b) => a+b;
 
 console.log(calc(3,4));
 console.log(calc(5,4)); 
@@ -35,4 +35,30 @@ console.log(str.toLowerCase());
 let twelve = "12.2px";
 //console.log(Math.round(twelve));
 console.log(parseInt(twelve));
-console.log(parseFloat(twelve));
+console.log(parseFloat(twelve)); */
+
+
+// callback ф-ии
+function first() {
+    setTimeout( function() {
+        console.log(1);
+    }, 500 );
+}
+
+function second() {
+    console.log(2);
+}
+
+first();
+second();
+
+function learnJS(lang, callback) {
+    console.log("Я учу " + lang);
+    callback();
+}
+
+function done() {
+    console.log("Я прошел 3й урок!")
+}
+
+learnJS("JavaScript", done); 
