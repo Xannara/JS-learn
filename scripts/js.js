@@ -52,3 +52,7 @@ for (let i = 1; i < 8; i++) {
     }
     console.log(i)
 }
+
+let y = 1;
+let x = y = 2;
+ console.log(x);
